@@ -1,13 +1,13 @@
-package com.kathe.springboot.app.controllers;
+package com.kathe.springboot.app.controllers.section02;
 
-import com.kathe.springboot.app.models.dto.ParamDTO;
+import com.kathe.springboot.app.models.section02.dto.ParamDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.kathe.springboot.app.controllers.PathVariableController.getParamDTO;
+import static com.kathe.springboot.app.controllers.section02.PathVariableController.getParamDTO;
 
 @RestController
 @RequestMapping("api/v1/params")

@@ -1,4 +1,4 @@
-package com.kathe.springboot.app.controllers;
+package com.kathe.springboot.app.controllers.section02;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,8 +1,8 @@
-package com.kathe.springboot.app.models.dto;
+package com.kathe.springboot.app.models.section02.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.kathe.springboot.app.models.User;
+import com.kathe.springboot.app.models.section02.User;
 import lombok.*;
 
 @Data

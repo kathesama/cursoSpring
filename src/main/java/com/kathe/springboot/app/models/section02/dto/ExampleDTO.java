@@ -1,4 +1,4 @@
-package com.kathe.springboot.app.models.dto;
+package com.kathe.springboot.app.models.section02.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Builder;

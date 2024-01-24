@@ -1,4 +1,4 @@
-package com.kathe.springboot.app.models;
+package com.kathe.springboot.app.models.section02;
 import lombok.*;
 
 import java.util.Optional;

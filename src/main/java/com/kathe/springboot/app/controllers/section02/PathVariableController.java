@@ -1,7 +1,7 @@
-package com.kathe.springboot.app.controllers;
+package com.kathe.springboot.app.controllers.section02;
 
-import com.kathe.springboot.app.models.User;
-import com.kathe.springboot.app.models.dto.ParamDTO;
+import com.kathe.springboot.app.models.section02.User;
+import com.kathe.springboot.app.models.section02.dto.ParamDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
