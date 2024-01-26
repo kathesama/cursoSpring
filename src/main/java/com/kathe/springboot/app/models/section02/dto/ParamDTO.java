@@ -4,8 +4,8 @@ import lombok.*;
 
 @Data
 @NoArgsConstructor(force = true)
-//@RequiredArgsConstructor
 @AllArgsConstructor
+//@RequiredArgsConstructor
 //@JsonIgnoreProperties(ignoreUnknown=true)
 public class ParamDTO {
     private String message = "undefined";
