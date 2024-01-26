@@ -1,14 +1,12 @@
-package com.kathe.springboot.app.services;
+package com.kathe.springboot.app.services.section03;
 
-import com.kathe.springboot.app.interfaces.ProductRepositoryInt;
-import com.kathe.springboot.app.interfaces.ProductServiceInt;
-import com.kathe.springboot.app.models.Product;
-import com.kathe.springboot.app.repositories.ProductRepositoryImpl;
+import com.kathe.springboot.app.interfaces.section03.ProductRepositoryInt;
+import com.kathe.springboot.app.interfaces.section03.ProductServiceInt;
+import com.kathe.springboot.app.models.section03.ProductC3;
+import com.kathe.springboot.app.repositories.section03.ProductRepositoryImpl;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
@@ -47,21 +45,21 @@ public class ProductService implements ProductServiceInt {
     private static final Logger logger = LoggerFactory.getLogger(ProductRepositoryImpl.class);
 
     @Override
-    public List<Product> findAll() {
+    public List<ProductC3> findAll() {
         logger.info("Service called here -----------------------------------------------------------------");
         Double taxValue = environment.getProperty("config.price.tax", Double.class);
         logger.info(String.valueOf(taxValue));
         return repository.findAll().stream().map(product -> {
-//            Product productTemp = new Product(product.getId(), product.getName(), product.getPrice());
-            Product productTemp = product.clone();
-            productTemp.setPrice(productTemp.getPrice() * taxValue);
+//            ProductC3 productC3Temp = new ProductC3(product.getId(), product.getName(), product.getPrice());
+            ProductC3 productC3Temp = product.clone();
+            productC3Temp.setPrice(productC3Temp.getPrice() * taxValue);
 
-            return productTemp;
+            return productC3Temp;
         }).toList();
     }
 
     @Override
-    public Product findById(Long id) {
+    public ProductC3 findById(Long id) {
         return repository.findById(id);
     }
 }

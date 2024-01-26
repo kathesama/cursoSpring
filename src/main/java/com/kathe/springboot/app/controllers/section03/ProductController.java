@@ -1,8 +1,7 @@
-package com.kathe.springboot.app.controllers;
+package com.kathe.springboot.app.controllers.section03;
 
-import com.kathe.springboot.app.interfaces.ProductRepositoryInt;
-import com.kathe.springboot.app.models.Product;
-import com.kathe.springboot.app.services.ProductService;
+import com.kathe.springboot.app.models.section03.ProductC3;
+import com.kathe.springboot.app.services.section03.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,12 +23,12 @@ public class ProductController {
     }
 
     @GetMapping("")
-    public List<Product> products() {
+    public List<ProductC3> products() {
         return productService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Product productById(@PathVariable Long id) {
+    public ProductC3 productById(@PathVariable Long id) {
         return productService.findById(id);
     }
 }

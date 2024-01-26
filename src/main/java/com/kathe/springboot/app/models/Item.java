@@ -7,7 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
-public class Product {
-    private String name;
-    private Double price;
+public class Item {
+    private Product product;
+    private Integer quantity;
+
+    public Double getImportQuantity (){
+      return quantity * product.getPrice();
+    }
 }
