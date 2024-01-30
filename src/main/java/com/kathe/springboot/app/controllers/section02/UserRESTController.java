@@ -56,6 +56,7 @@ public class UserRESTController {
         Map<String, Object> body = new HashMap<>();
         UserDTO userDto = new UserDTO();
         User user = new User("Kathe", "Aguirre", "");
+
         User user2 = new User("Estefania", "Martinez");
 
 //        userDto.setTitle("New title");

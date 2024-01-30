@@ -1,7 +1,7 @@
 package com.kathe.springboot.app;
 
-import com.kathe.springboot.app.models.Item;
-import com.kathe.springboot.app.models.Product;
+import com.kathe.springboot.app.models.section04.Item;
+import com.kathe.springboot.app.models.section04.Product;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

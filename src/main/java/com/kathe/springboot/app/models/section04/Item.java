@@ -1,4 +1,4 @@
-package com.kathe.springboot.app.models;
+package com.kathe.springboot.app.models.section04;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

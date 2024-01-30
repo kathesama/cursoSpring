@@ -1,6 +1,5 @@
-package com.kathe.springboot.app.models;
+package com.kathe.springboot.app.models.section04;
 
-import com.kathe.springboot.app.repositories.section03.ProductRepositoryImpl;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import lombok.*;

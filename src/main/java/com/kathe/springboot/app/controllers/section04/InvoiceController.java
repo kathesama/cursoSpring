@@ -1,6 +1,6 @@
-package com.kathe.springboot.app.controllers;
+package com.kathe.springboot.app.controllers.section04;
 
-import com.kathe.springboot.app.models.Invoice;
+import com.kathe.springboot.app.models.section04.Invoice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
