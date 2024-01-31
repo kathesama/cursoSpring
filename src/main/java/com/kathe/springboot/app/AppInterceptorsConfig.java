@@ -10,15 +10,21 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class AppInterceptorsConfig implements WebMvcConfigurer {
     private final HandlerInterceptor timeInterceptor;
+    private final HandlerInterceptor calendarInterceptor;
 
     @Autowired
-    public AppInterceptorsConfig(@Qualifier("loadingTimeInterceptor") HandlerInterceptor timeInterceptor) {
+    public AppInterceptorsConfig(
+            @Qualifier("loadingTimeInterceptor") HandlerInterceptor timeInterceptor,
+            @Qualifier("calendarInterceptor") HandlerInterceptor calendarInterceptor
+            ) {
         this.timeInterceptor = timeInterceptor;
+        this.calendarInterceptor = calendarInterceptor;
     }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         WebMvcConfigurer.super.addInterceptors(registry);
 
+        registry.addInterceptor(calendarInterceptor);
         registry.addInterceptor(timeInterceptor).addPathPatterns("/api/v1/interceptors/faz");
     }
 }

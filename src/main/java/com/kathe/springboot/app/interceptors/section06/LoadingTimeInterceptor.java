@@ -1,4 +1,4 @@
-package com.kathe.springboot.app.interceptors;
+package com.kathe.springboot.app.interceptors.section06;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
